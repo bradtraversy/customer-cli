@@ -14,7 +14,7 @@ const Customer = require('./models/customer');
 const addCustomer = (customer) => {
   Customer.create(customer).then(customer => {
     console.info('New Customer Added');
-    db.close();
+    mongoose.connection.close();
   });
 }
 
@@ -26,7 +26,7 @@ const findCustomer = (name) => {
     .then(customer => {
       console.info(customer);
       console.info(`${customer.length} matches`);
-      db.close();
+      mongoose.connection.close();
     });
 }
 
