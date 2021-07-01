@@ -1,6 +1,6 @@
 # Customer Management CLI
 
-Command line interface fir managing customers. Uses Mongoose, COmmander.js and Inquirer.js
+Command line interface fir managing customers. Uses Mongoose, Commander.js and Inquirer.js. YouTube tutorial [here](https://www.youtube.com/watch?v=v2GKt39-LPA&t=1303s)
 
 ### Version
 1.0.0
