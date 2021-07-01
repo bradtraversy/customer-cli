@@ -35,8 +35,18 @@ const questions = [
 
 program 
   .version('1.0.0')
+  .alias('v')
   .description('Client Management System')
-
+program
+  .help(`
+Function                  Alias        Description
+version                   v            To check the version of the customer-cli
+client-cli add            a            To add new customes in the database
+client-cli list           l            To check all the customes in the database
+client-cli update [_ID]   u            To update details for specific customes in the database
+client-cli remove [_ID]   r            To remove details for specific customes in the database
+client-cli find [NAME]    f            To find a specific customes in the database
+`)
 // program
 //   .command('add <firstname> <lastname> <phone> <email>')
 //   .alias('a')
